@@ -9,21 +9,19 @@ import javax.swing.JOptionPane;
 public class Prooceso {
 
     private static String mensaje = ""; 
-
+    private static String letras = "";
+    private static String fin = "fin";
     public static void main(String[] args) {
         
-
-        
         Scanner teclado = new Scanner(System.in);
-        
-        System.out.println("Introduce una palabra");
-        String letras = teclado.nextLine();
-
-        while(letras.equals("fin")){
-            System.out.println("Introduce una palabra");
+    
+            while(!letras.equals(fin) ){
+                System.out.println("Introduce una palabra");
+                letras = teclado.nextLine();
         
             for(int i = 0; i < letras.length(); i++){
                 pb();
+                
             }
             System.out.println(mensaje);
         }
